@@ -3,7 +3,7 @@ import mysql.connector
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-file_path = 'C:/Users/saias/OneDrive/Desktop/Revature Projects/uae_used_cars_10k.csv'
+file_path = "C:\Users\upput\Downloads\uaeusedcarsdataset.csv"
 
 # File Handling
 try:
@@ -43,12 +43,12 @@ if 'mileage' in df.columns:
 print("\n Data is cleaned successfully \n")
 print(df.head())
 
-cleaned_data_path = 'C:/Users/saias/OneDrive/Desktop/Revature Projects/uae_used_cars_cleaned_data.csv'
+cleaned_data_path = "C:\Users\upput\Downloads\uaeusedcarsdataset.csv"
 df.to_csv(cleaned_data_path, index=False)
 print("\n Cleaned data saved to", cleaned_data_path)
 
 
-connection = mysql.connector.connect(host='localhost', password = 'Asha#1039', user = 'root', database= 'uae_used_cars_db')
+connection = mysql.connector.connect(host='localhost', password = '@@Aravind1$$', user = 'root', database= 'uae_used_cars_db')
 try:
     if connection.is_connected():
         print("connection established ")
